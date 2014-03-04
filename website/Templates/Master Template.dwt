@@ -7,10 +7,13 @@
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
+<!-- TemplateParam name="Doctor Secondary" type="boolean" value="true" -->
+<!-- TemplateParam name="Companions Secondary" type="boolean" value="true" -->
+<!-- TemplateParam name="Doctors Secondary" type="boolean" value="false" -->
 </head>
 
 <body>
-<table>
+	<table>
   <tr>
     <td colspan="2">[Primary navigation]</td>
   </tr>
@@ -18,8 +21,20 @@
     <td colspan="2">[Banner]</td>
   </tr>
   <tr>
-    <td>[Secondary Navigation]</td>
-    <td>[content]</td>
+    <td width="135" height="178"><!-- TemplateBeginIf cond="_document['Doctors Secondary']" -->
+    	<table>
+    		<tr>
+    			<td>The First Doctor</td>
+    			</tr>
+    		<tr>
+    			<td>The Second Doctor</td>
+    			</tr>
+    		<tr>
+    			<td>The Third Doctor</td>
+    			</tr>
+    		</table>
+    <!-- TemplateEndIf --></td>
+    <td width="54"><!-- TemplateBeginEditable name="Content Area" -->[content]<!-- TemplateEndEditable --></td>
   </tr>
 </table>
 </body>
